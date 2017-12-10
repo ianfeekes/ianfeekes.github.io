@@ -1,0 +1,235 @@
+*								/* this astrix essentially means this is the style for: everythign */ 
+{
+	/*margin: 0;
+	padding: 0;*/
+}
+
+body
+{
+	background-color: #f4f4f4;	/*hexadecimal values. we can also use color names, html5 color names, and rgb values */ 
+	color: #555555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;			/*16 is the default font size */ 
+	font-weight: normal;		/*how bold it is */ 
+	/*the above can also be represented by the following in quotes "font: normal 16px Arial, Helvetica, sans-serif"*/ 
+	line-height: 1.6em;			/*spacing between the lines. We could have represented it in pixels as well but m or em is the default unit */ 
+}
+
+a
+{
+	text-decoration: none;
+	color: green;
+}
+
+a:hover 
+{
+	color: red;					/* ths changes the color from when you hover over a link */ 
+}
+
+a:active
+{
+	color: green;				/* active is the state that text n sich is in when you click on it */ 
+}
+
+/*a:visited						/* right now index.html has all the a's pointing to null links n whatever so they will all be black. */ 
+/*{
+	color: black;				/* this is what happens when you visit one */ 
+/*}*/
+
+.container
+{
+	width: 80%;
+	margin: auto;				/*sets the margin to the same on all sides with even margining. Margin w x y z = Margin (top)(right)(bottom)(left) */
+}
+
+.button
+{
+	background: #333;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+}
+
+.button: hover
+{
+	background: red;
+	color: white;
+}
+
+.clr
+{
+	clear: both;				/* clears any floats above it */ 
+}
+
+.box-1							/* .className is used to give styling for lines/paragraphs/html under a specific class className */ 
+{
+	background-color: #333;
+	color: #fff;
+
+	border-right: 5px red solid;
+	border-left: 5px red solid;
+	border-top: 5px red solid;
+	border-bottom: 5px red solid; /*these four lines are the same thing as the command "border: 5x red solid"*/
+	border-width: 3px; 			  /*sets width of the entire border to 3 pixels*/
+	border-bottom-width: 10px;	  /*sets the bottom border to 10 pixels*/ 
+	border-top-style: dotted;	  /*there are various cool border styles. I just like solid tho */ 
+
+	border: 5px red solid;		  /* this command should overwrite the fat block of example code above */ 
+
+	padding: 20px;				  /*same as above: we could do commands like "padding-right", etc but padding: 20px; works fine and is easy and aesthetic*/ 
+
+	margin: 20px, 0;			  /*20 px top bottom, 0 px right left */
+
+}
+
+.box-1 h1
+{
+	font-family: Tahoma;
+	font-weight: 800;
+	font-style: italic;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	word-spacing: 1em;
+}
+
+.box-2
+{
+	border: 3px dotted #ccc;
+	padding: 20px;
+
+}
+
+.categories 
+{
+	border: 1px #ccc solid;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.categories h2
+{
+	text-align: center;
+}
+
+.categories ul 
+{
+	padding: 0;
+	padding-left: 20px;
+	list-style: square;		/*this is what the bullet points will look like*/
+	list-style: none; 		/*this will negate the above command*/
+}
+
+.categories li
+{
+	padding-bottom: 6px;
+	border-bottom: dotted 1px #333;
+	list-style-image: url('../images/check.jpg');
+}
+
+.my-form
+{
+	padding: 20px;
+}
+
+.my-form .form-group
+{
+	padding-bottom: 15px;
+}
+
+.my-form label 
+{
+	display: block;
+
+}
+
+.my-form input[type = "text"] .my-form textarea	/*only does this formating for type text input, so it disregards the "button" type input */ 
+{
+	padding: 8px;
+	width: 100%;
+}
+
+.block
+{
+	float: left;
+	width: 33.3%;
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.p-box
+{
+	background-image:url('../images/bgimage.jpg');
+	width: 800px;
+	height: 480px;
+	border: 1px solid black;
+	margin-top: 30px;
+	position: relative;	/* sets the position relative to the box/block of text*/ 
+	background-repeat: no-repeat; /* this sets the image to not repeat */ 
+	background-position: 100px 200px;
+	background-position: center center; /*centers the image in the background */ 
+}
+
+.p-box h1
+{
+	position: absolute;
+	top: 100px;
+	left: 200px;
+}
+
+.p-box h2
+{
+	position: absolute; 
+	bottom: 40px;
+	right: 100px;
+}
+
+.fix-me
+{
+	position: fixed; /* this is cool because it stays in this position even if you move around scrolling on the webpage it'll stay in its position and hover around with you */ 
+	top: 400px;
+}
+
+.mylist li:first-child /* demonstrates how you can target specific elements in a list*/
+{
+	background: red;
+}
+
+.mylist li:last-child
+{
+	background: blue;
+}
+
+.mylist li:nth-child(5) /*targeting 5th child of the list*/ 
+{
+	background: yellow;
+}
+
+.mylist li:nth-child(even) /*targeting even or odd childs in lists is totally possible too */ 
+{
+	background: grey;
+}
+
+#main-block
+{
+	float: left;
+	width: 70%;
+	padding: 15px
+	box-sizing: border-box;
+
+}
+
+#sidebar
+{
+	float: rifht;
+	width: 30%;
+	background-color: #333;
+	color: #fff;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+
+
+

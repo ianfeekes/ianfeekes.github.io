@@ -1,0 +1,104 @@
+Notes on CSS:
+CSS stands for cascading style sheets. It is used for styling html. It's great for modifying colors, shapes, fonts, shadowing, placement and images. 
+<link href="style.css" type="text/css" rel="stylesheet"> you use this on your index.html to link up your css code 
+You can add css elements directly into the html code by adding the style="" element and within the quotes writing what you want for the css. This isn't practical though so avoid this and stick with classes and IDs and adding CSS through a separate style file.
+You can also add css elements directly into the html code by adding a <style> </style> tag and in between it you can write css out. Again, this is not the best method for styling your webpage. 
+
+<link href="https://www.codecademy.com/stylesheets/style.css" type="text/css" rel="stylesheet"> you want to write a line something like this in your index.html in order to link the stylesheet with it. You can type "link" then press "tab" on your index.html and it will prefill a lot out for you. 
+.className
+{
+	/*this is a selector for all html elements with the class className*/
+}
+
+text-transform: uppercase	/*this makes all text in the element turn to uppercase */
+in html tags you can specify diffferent classes just by whitespace eg <p class = "class1 class2 classN"> </p> to incapsulate class1 etc.
+
+#id-name
+{
+	/*this is a selector for all html elements with the id id-name*/
+}
+
+IDs get precedence to classes in CSS in terms of changes applied to the elements 
+
+.destination h2{
+  font-family: cursive; /*this is a selector for all html elements under h2 tag with a class of destination*/
+}
+
+rebeccapurple is a dope color, as is MidnightBlue
+
+color: rebeccapurple !important /*this prioritizes using this color above more specific classes in your current selector*/
+
+Be sure to use commas when you are selecting different elements or classes or tags or ids in your CSS so that you don't have any issues 
+Don't forget to use semicolons at the end of css statements 
+
+If the type-face for a font family or something has multiple words then it's best to enclose it in quotes
+font-weight: bold
+font-family: font
+font-size: npx 
+text-align: center
+
+you can also control the opacity of an element. It is measured in a decimal from 0 to 1, with 0 being fully invisible
+
+Look up "The Box Model" if you're ever confused how margins/border/padding work
+
+margin: 0 auto; /*sets the vertical margins to 0 and the horizontal margins to auto*/
+min-width: ;sets the mininum width
+max-width: ;sets the maximum width 
+
+overflow: scroll; when the text overflows create a separate scroll bar for it so that it doesn't interfere with the rest of the webpage 
+
+  visibility: hidden;  sets text/elements to be invisible 
+
+  With borders and padding it will change the height and width and margins, which makes the box-model somewhat flawed. This is why we use "content box" 
+  box-sizing: border-box;  
+
+  *{
+  		/*this is the selector for ALL elements*/ 
+  }
+
+The default position of an element can be changed by setting its position property. Position can be set to: static(default, doesn't need to be specified), relative, absolute, and fixed. 
+
+
+if we do this:
+{
+	position: relative;
+	top: 20px; 
+	bottom: 30px
+	left: 10px;
+	right: 5px;  /*this sets the position to relative to how it is displayed on the page by default. it then moves this relativity 20px from the top, 30 from the bottom, 10px from the left and 5px from the right*/ 
+}
+
+When an element's position is set to absolute all other elements on the page will ignore the element and act like it is not present on the page.
+If it's fixed it will stay with you as you scroll through the page. 
+
+z-index: sets things backward or forward with an integer value. The lower the z index the more priority it gets for being seen(the more forward it is put). 
+
+display: inline-block; /*block elements appear next to eachother (and we can set each item's height and width properties) and will pile vertically when the horizontal space is used up, like normal text*/ 
+
+The float property can simply set the element as far left or as far right as possible, or center. 
+
+The clear property sets which way text will move in the event it collides with other text. clear: left/right/both/none; 
+
+You can display colors with names, hex, rgb, and other
+
+font-weight: (300 is light, 400 is default, 700 is bold); 
+ word-spacing: (.n)em; /*.25em is the default value of word spacing, more increases the spacing between words*/ 
+ letter-spacing: words the same as word spacing but for separate letters 
+ text-alight: left/right/center /*should speak for itself*/ 
+ line-height: (n)px; /*should speak for itself.*/
+
+ serif has the fun little details at the ends of each letter, whereas sans-serif does not. Sans-serif looks a little more modern. 
+
+ display: grid; /*turns an html element into a grid container*/ 
+ grid-template-columns: col1percentageWidth% col2percentageWidth%; (doesn't have to be percentage, you can do pixels but that's stupid don't do that) 
+ grid-template-rows: % % ;works like columns but with rows
+   grid-row-gap: 20px; /*creates a gap between the rows*/
+   grid-column-gap: 5px; /*same as above*/ 
+
+   you can also just do that with: grid-gap: (n)px (m)px; 
+
+   grid-row-start: (n) ;/*sets it so that the item begins in the nth row*/ 
+   grid-row-end: (n) ;/*sets it so that the item ends right before the nth row*/ 
+   grid-row: (n1) / (n2); /*essentially just executes the two lines above*/ 
+
+
