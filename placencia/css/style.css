@@ -271,7 +271,7 @@ p
 	margin-left: 2px; 
 	display: none;  
 	position: absolute; 
-	background-color:rgb(225, 225, 116);
+	background-color:rgb(225, 225, 116); 
 	min-width: 160px;
 	z-index: 1;
   }
@@ -369,22 +369,24 @@ p
   /* Slideshow container */
   .slideshow-container {
 
-	padding-left: 70px; 
-	padding-right: 70px; 
+	margin: auto; 
+	margin-top: -25px; 		/*The navbar has a 25px margin we don't want*/ 
+	margin-bottom: 2%; 
+}
 
-	max-width: 1000px;
-	margin: auto;
+  .slideImage{
+	  height:75%; 
+	  width:100%; 
   }
-
   
   /* Next & previous buttons */
   .prev, .next {
+	  padding-left: 2%; 
+	  padding-right: 2%; 
 	cursor: pointer;
 	position: absolute;
-	top: 75%;
+	top: 50%;
 	width: auto;
-	padding: 16px;
-	margin-top: -22px;
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
@@ -395,7 +397,7 @@ p
   
   /* Position the "next button" to the right */
   .next {
-	right: 11.5%;
+	right: 0; 
 	border-radius: 3px 0 0 3px;
   }
   
@@ -408,11 +410,10 @@ p
   .text {
 	color: #f2f2f2;
 	font-size: 15px;
+	width: 100%; 
 	padding: 8px 12px;
-	position: absolute;
-	bottom: 8px;
-	width: 75%;
-	top: 90%; 
+	bottom: 15%; 
+	position: absolute; 
 	text-align: center;
   }
   
@@ -422,7 +423,6 @@ p
 	font-size: 12px;
 	padding: 8px 12px;
 	position: absolute;
-	top: 32%;
   }
   
   /* The dots/bullets/indicators */
